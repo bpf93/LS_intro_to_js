@@ -1,0 +1,42 @@
+/*
+Write the code necessary to retrieve 
+the value of the courses property of 
+our student object.
+
+let student = {
+  name: 'Carmen',
+  age: 14,
+  grade: 10,
+  courses: ['biology', 'algebra', 'composition', 'ceramics'],
+  gpa: 3.75,
+};
+*/
+
+//My answer:
+let student = {
+  name: 'Carmen',
+  age: 14,
+  grade: 10,
+  courses: ['biology', 'algebra', 'composition', 'ceramics'],
+  gpa: 3.75,
+};
+
+//dot notation:
+console.log(student.courses);
+//bracket notation:
+console.log(student['courses']);
+
+/*
+Answer provided:
+
+Same as mine.
+
+Discussion
+We can access the property value using either dot notation or bracket notation. JavaScript style guides typically recommend using dot notation when possible.
+
+Further Exploration
+What is returned if you attempt to access an object property that does not exist? Try it out for yourself, for example calling student.locker with the above example object. Especially notice that no exception is raised.
+*/
+
+console.log(student.locker); // undefined
+
